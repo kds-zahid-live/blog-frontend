@@ -8,7 +8,7 @@ const Blog = () => {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/posts/slug/${slug}`)
+    axios.get(`https://blog-server-i6fp.onrender.com/api/posts/slug/${slug}`)
       .then(res => setPost(res.data))
       .catch(err => console.error(err));
   }, [slug]);
