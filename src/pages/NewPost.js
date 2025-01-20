@@ -27,7 +27,7 @@ const NewPost = () => {
         imageHeight, // Add the image height
         imageWidth, // Add the image width
       };
-      await axios.post('http://localhost:5000/api/posts', newPost);
+      await axios.post('https://blog-server-i6fp.onrender.com/api/posts', newPost);
       navigate('/');
     } catch (err) {
       console.error(err);
